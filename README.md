@@ -1,42 +1,95 @@
-# Rosalind Bioinformatics Problems
+# 🧬 Rosalind Bioinformatics Solutions
 
-Resolução de problemas de bioinformática do Rosalind utilizando Python, com foco em construção de workflows reprodutíveis para análise de dados biológicos.
+Este repositório contém minhas soluções para problemas da plataforma Rosalind, com foco em desenvolvimento de habilidades práticas em bioinformática e manipulação de dados biológicos.
 
-Este repositório documenta minha transição prática para bioinformática aplicada (*dry lab*), utilizando exercícios clássicos para consolidar conceitos de:
-
-- manipulação de sequências biológicas
-- análise de dados em Python
-- uso de Linux/WSL
-- execução de scripts via terminal
-- versionamento com Git
-- organização de projetos reprodutíveis
+O objetivo é evoluir progressivamente do raciocínio básico de programação para a construção de scripts típicos de análise de sequências em bioinformática.
 
 ---
 
-# Problem 1 — Counting DNA Nucleotides
+# 🚀 Objetivo do projeto
 
-## 📌 Objetivo
-
-Contar o número de ocorrências das bases:
-
-- Adenina (A)
-- Citosina (C)
-- Guanina (G)
-- Timina (T)
-
-em uma sequência de DNA.
-
-Problema disponível em:
-
-🔗 https://rosalind.info/problems/dna/
+- Praticar lógica de programação aplicada à biologia molecular
+- Desenvolver habilidades em Python para análise de sequências biológicas
+- Construir base para pipelines de bioinformática (dry lab)
+- Documentar evolução técnica de forma estruturada
 
 ---
 
-# 📂 Estrutura do projeto
+# 🧪 Problemas resolvidos
 
-```bash
-.
-├── dna_count.py
-├── rosalind_dna.txt
-├── output.txt
-└── README.md
+## 1. DNA Counting
+
+### 📌 Descrição
+Contagem das bases nitrogenadas em uma sequência de DNA.
+
+### 🧬 Entrada
+Uma string de DNA contendo A, C, G, T
+
+### 📤 Saída
+Número de ocorrências de cada base.
+
+### 💡 Conceitos aplicados
+- leitura de arquivos via terminal (sys.argv)
+- parsing de arquivos de texto
+- uso de Counter para contagem eficiente
+- manipulação básica de strings
+
+---
+
+## 2. DNA → RNA Transcription
+
+### 📌 Descrição
+Transcrição de DNA em RNA substituindo timina (T) por uracila (U).
+
+### 🧬 Regra biológica
+DNA → RNA  
+T → U
+
+### 📤 Saída
+Sequência de RNA correspondente à entrada de DNA.
+
+### 💡 Conceitos aplicados
+- leitura de arquivos de entrada
+- transformação de strings
+- uso de generator expressions
+- reconstrução eficiente de strings com join
+- introdução a padrões de bioinformática
+
+---
+
+# ⚙️ Como executar os scripts
+
+Exemplo:
+
+python dna_count.py input.txt  
+python dna_to_rna.py input.txt  
+
+---
+
+# 📂 Estrutura do repositório
+
+Rosalind_Problem_Solving/  
+├── dna_count.py  
+├── dna_to_rna.py  
+├── rosalind_dna.txt  
+├── rosalind_dna_rna.txt  
+└── README.md  
+
+---
+
+# 📈 Evolução do projeto
+
+Este repositório será continuamente atualizado conforme avanço na resolução dos problemas da Rosalind, com organização progressiva dos scripts e melhoria na estrutura de código.
+
+---
+
+# 👤 Autor
+
+Augusto Garcia Guimarães, PhD
+augarguima@outlook.com
+
+---
+
+# 🧠 Nota
+
+Este projeto representa uma transição prática do raciocínio computacional básico para aplicações em análise de dados biológicos.
